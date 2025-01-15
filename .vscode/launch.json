@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "print docx main part body structure",
+      "type": "jdk",
+      "request": "launch",
+      "mainClass": "${workspaceFolder}/src/main/java/bi/docxutils/DocxMainPartBodyStructurePrinter.java",
+      "vmArgs": "-Xms200m -Xmx200m",
+      "args": "${workspaceFolder}/data/tk-report-template-draft.docx ${workspaceFolder}/data/ReportTemplateStructure.txt",
+      "console": "internalConsole"
+    }
+  ]
+}
