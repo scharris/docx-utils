@@ -2,13 +2,31 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "print docx main part body structure",
+      "name": "print Trial_Report_Template structure",
       "type": "jdk",
       "request": "launch",
       "mainClass": "${workspaceFolder}/src/main/java/bi/docxutils/DocxMainPartBodyStructurePrinter.java",
       "vmArgs": "-Xms200m -Xmx200m",
-      "args": "${workspaceFolder}/data/tk-report-template-draft.docx ${workspaceFolder}/data/ReportTemplateStructure.txt",
+      "args": "${workspaceFolder}/data/Trial_Report_Template.docx ${workspaceFolder}/data/Trial_Report_Template.txt",
       "console": "internalConsole"
-    }
+    },
+    {
+      "name": "print tk-report structure",
+      "type": "jdk",
+      "request": "launch",
+      "mainClass": "${workspaceFolder}/src/main/java/bi/docxutils/DocxMainPartBodyStructurePrinter.java",
+      "vmArgs": "-Xms200m -Xmx200m",
+      "args": "${workspaceFolder}/data/tk-report.docx ${workspaceFolder}/data/tk-report.txt",
+      "console": "internalConsole"
+    },
+    {
+      "name": "print tk-report relationships",
+      "type": "jdk",
+      "request": "launch",
+      "mainClass": "${workspaceFolder}/src/main/java/bi/docxutils/RelationshipsPrinter.java",
+      "vmArgs": "-Xms200m -Xmx200m",
+      "args": "${workspaceFolder}/data/tk-report.docx ${workspaceFolder}/data/tk-report-relationships.txt",
+      "console": "internalConsole"
+    },
   ]
 }
