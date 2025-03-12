@@ -20,12 +20,39 @@
       "console": "internalConsole"
     },
     {
+      "name": "print full tk-report structure",
+      "type": "jdk",
+      "request": "launch",
+      "mainClass": "${workspaceFolder}/src/main/java/bi/docxutils/DocxMainPartBodyStructurePrinter.java",
+      "vmArgs": "-Xms200m -Xmx200m",
+      "args": "${workspaceFolder}/data/tk-report-21r042.docx ${workspaceFolder}/data/tk-report-21r042.txt",
+      "console": "internalConsole"
+    },
+    {
       "name": "print tk-report relationships",
       "type": "jdk",
       "request": "launch",
       "mainClass": "${workspaceFolder}/src/main/java/bi/docxutils/RelationshipsPrinter.java",
       "vmArgs": "-Xms200m -Xmx200m",
       "args": "${workspaceFolder}/data/tk-report.docx ${workspaceFolder}/data/tk-report-relationships.txt",
+      "console": "internalConsole"
+    },
+    {
+      "name": "print DMPK_NBE_TK-Report.docx structure",
+      "type": "jdk",
+      "request": "launch",
+      "mainClass": "${workspaceFolder}/src/main/java/bi/docxutils/DocxMainPartBodyStructurePrinter.java",
+      "vmArgs": "-Xms200m -Xmx200m",
+      "args": "${workspaceFolder}/data/DMPK_NBE_TK-Report.docx ${workspaceFolder}/data/DMPK_NBE_TK-Report.txt",
+      "console": "internalConsole"
+    },
+    {
+      "name": "print TK_Report_Template_No_ADA.docx structure",
+      "type": "jdk",
+      "request": "launch",
+      "mainClass": "${workspaceFolder}/src/main/java/bi/docxutils/DocxMainPartBodyStructurePrinter.java",
+      "vmArgs": "-Xms200m -Xmx200m",
+      "args": "${workspaceFolder}/data/TK_Report_Template_No_ADA.docx ${workspaceFolder}/data/TK_Report_Template_No_ADA.txt",
       "console": "internalConsole"
     },
   ]
